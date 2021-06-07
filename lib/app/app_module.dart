@@ -5,6 +5,12 @@ import 'modules/home/home_module.dart';
 
 class AppModule extends Module {
   @override
+  final List<Module> imports = [
+    IntroModule(),
+    HomeModule()
+  ];
+
+  @override
   final List<Bind> binds = [
     // Bind.instance<String>('Victor'),
     // Bind.instance<int>(25),

@@ -5,7 +5,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 class IntroModule extends Module {
   @override
   final List<Bind> binds = [
-    Bind.lazySingleton((i) => IntroStore()),
+    Bind.lazySingleton((i) => 'Victao Intro', export: true),
   ];
 
   @override
